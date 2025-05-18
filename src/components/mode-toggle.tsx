@@ -1,29 +1,19 @@
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "@/components/theme-provider"
 import { Button } from "@/components/ui/button"
-import {useState} from "react";
 
 export function ModeToggle() {
-    const { setTheme } = useTheme();
-    const [currentTheme, setCurrentTheme] = useState("dark") ;
+    const { theme, setTheme } = useTheme();
 
     return (
-        <Button onClick={()=> {
-            const changes = getChanges(currentTheme)
-            
-            setCurrentTheme(changes)
-            setTheme(changes)
-        }}>
-            {currentTheme === "dark" ? (
-                <Moon />
-            ) : (
-                <Sun />
-            )}
+        <Button onClick={()=> setTheme(theme === 'dark' ? 'light' : 'dark')}
+        variant={"ghost"}
+        size={"nopadding"}
+        className={"hover:cursor-pointer p-1"}>
+
+            {theme === "dark" ? <Moon /> : <Sun /> }
+
         </Button>
     )
-}
-
-function getChanges(currentTheme: string) {
-    return currentTheme === 'dark' ? 'light' : 'dark';
 }
 

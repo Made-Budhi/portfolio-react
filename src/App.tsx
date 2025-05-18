@@ -12,8 +12,8 @@ function App({children} : {children:React.ReactNode}) {
                <AppSidebar />
 
                 <SidebarInset>
-                    <nav className={"bg-sidebar/80 backdrop-blur-sm w-full py-2.5 fixed border-b-1 border-sidebar-border/60 z-10 flex flex-row-reverse lg:block"}>
-                        <SidebarTrigger />
+                    <nav className={"bg-sidebar/80 backdrop-blur-sm w-full py-2.5 fixed border-b-1 border-sidebar-border/60 z-10 flex flex-row-reverse gap-3 lg:block"}>
+                        <SidebarTrigger className={"hover:cursor-pointer"} />
                         <ModeToggle />
                     </nav>
 
