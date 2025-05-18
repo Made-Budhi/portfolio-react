@@ -7,7 +7,7 @@ import {ModeToggle} from "@/components/mode-toggle.tsx";
 
 function App({children} : {children:React.ReactNode}) {
     return (
-        <ThemeProvider>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
             <SidebarProvider>
                <AppSidebar />
 

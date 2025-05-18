@@ -112,17 +112,6 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-
-  --animate-wiggle: wiggle 2s ease-in-out infinite;
-  @keyframes wiggle {
-    0%,
-    100% {
-      transform: rotate(-90deg);
-    }
-    50% {
-      transform: rotate(90deg);
-    }
-  }
 }
 
 @layer base {
