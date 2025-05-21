@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
     {
-        title: "Curent Project",
+        title: "Current Project",
         time: "Present",
         image: "/current-project.png",
         description: "Leading the development of a web-based system to manage sponsorships and foster child monitoring.",
